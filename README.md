@@ -40,7 +40,7 @@ Supported APIs:
 - Finish ( fi )
 
 
-Examples - [Full Documentation](https://www.paralleldots.com/docs/)
+Examples - [Full Documentation](https://www.paralleldots.com/docs)
 -------------------------------
 
 ```r
