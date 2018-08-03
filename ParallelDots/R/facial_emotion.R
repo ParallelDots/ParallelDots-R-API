@@ -10,5 +10,5 @@ facial_emotion <- function(url1,path,key) {
               verbose())
   stop_for_status(req)
   result<-content(req)
-  return(cat(toJSON(result)))
+  return(toJSON(result))
 }

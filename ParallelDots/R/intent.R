@@ -10,5 +10,5 @@ intent <- function(url,data,key) {
               verbose())
   stop_for_status(req)
   result<-content(req)
-  return(cat(toJSON(result)))
+  return(toJSON(result))
 }
