@@ -10,5 +10,5 @@ nsfw <- function(url1,path,Api_Key) {
               verbose())
   stop_for_status(req)
   result<-content(req)
-  return(toJSON(result))
+  return(toJSON(result, auto_unbox = TRUE))
 }

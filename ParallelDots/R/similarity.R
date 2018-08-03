@@ -11,5 +11,5 @@ similarity <- function(url,data_1,data_2,key) {
               verbose())
   stop_for_status(req)
   result<-content(req)
-  return(toJSON(result))
+  return(toJSON(result, auto_unbox = TRUE))
 }
