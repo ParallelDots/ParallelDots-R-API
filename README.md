@@ -15,7 +15,7 @@ devtools::install(<path_to_locally_cloned_repo>)
 Dependencies
 -------------
 - httr
-- RJSONIO
+- jsonlite
 
 
 API Keys
@@ -205,7 +205,7 @@ Example
 
 ```r
 library("httr")
-library("RJSONIO")
+library("jsonlite")
 library("ParallelDots")
 
 url="https://apis.paralleldots.com/v3/language_detection"
