@@ -205,7 +205,6 @@ Example
 ```r
 library("httr")
 library("RJSONIO")
-library("jsonlite")
 library("ParallelDots")
 
 url="https://apis.paralleldots.com/v3/language_detection"
