@@ -6,8 +6,8 @@ object_recognizer <- function(url1,path,key) {
                 url=path,
                 api_key=key
               ),
-              encode = "multipart",
-              verbose())
+              encode = "multipart"
+              )
   stop_for_status(req)
   result<-content(req)
   return(toJSON(result, auto_unbox = TRUE))

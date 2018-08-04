@@ -7,8 +7,8 @@ multilang_keywords <- function(url,data,key,language_code) {
                 api_key=key,
                 lang_code=language_code
               ),
-              encode = "multipart",
-              verbose())
+              encode = "multipart"
+              )
   stop_for_status(req)
   result<-content(req)
   return(toJSON(result, auto_unbox = TRUE))

@@ -7,8 +7,8 @@ custom_classifier <- function(url,data,key,category_input) {
                 api_key=key,
                 category=category_input
               ),
-              encode = "multipart",
-              verbose())
+              encode = "multipart"
+  )
   stop_for_status(req)
   result<-content(req)
   return(toJSON(result, auto_unbox = TRUE))
