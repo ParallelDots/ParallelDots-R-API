@@ -1,5 +1,5 @@
 library("httr")
-library("RJSONIO")
+library("jsonlite")
 ner <- function(url,data,key) {
   req <- POST(url,
               body = list(

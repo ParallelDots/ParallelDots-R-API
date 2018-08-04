@@ -1,5 +1,5 @@
 library("httr")
-library("RJSONIO")
+library("jsonlite")
 object_recognizer <- function(url1,path,key) {
   req <- POST(url1,
               body = list(

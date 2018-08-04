@@ -1,5 +1,5 @@
 library("httr")
-library("RJSONIO")
+library("jsonlite")
 nsfw <- function(url1,path,Api_Key) {
   req <- POST(url1,
               body = list(

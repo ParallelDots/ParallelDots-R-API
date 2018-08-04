@@ -12,10 +12,10 @@ Depends: R (>= 3.2.3)
 LazyData: true
 imports:
   httr,
-  RJSONIO,
+  jsonlite,
 suggests:
   httr,
-  RJSONIO,
+  jsonlite,
   testthat
  
   

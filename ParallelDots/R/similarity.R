@@ -1,5 +1,5 @@
 library("httr")
-library("RJSONIO")
+library("jsonlite")
 similarity <- function(url,data_1,data_2,key) {
   req <- POST(url,
               body = list(

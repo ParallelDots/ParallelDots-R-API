@@ -1,5 +1,5 @@
 library("httr")
-library("RJSONIO")
+library("jsonlite")
 custom_classifier <- function(url,data,key,category_input) {
   req <- POST(url,
               body = list(

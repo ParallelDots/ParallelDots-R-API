@@ -1,5 +1,5 @@
 library("httr")
-library("RJSONIO")
+library("jsonlite")
 
 emotion <- function(url,data,key,language_code) {
   req <- POST(url,

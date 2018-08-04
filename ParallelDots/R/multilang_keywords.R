@@ -1,5 +1,5 @@
 library("httr")
-library("RJSONIO")
+library("jsonlite")
 multilang_keywords <- function(url,data,key,language_code) {
   req <- POST(url,
               body = list(
