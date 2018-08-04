@@ -65,8 +65,9 @@ result<-sentiment(url,text,api_key,lang_code)
 
 
 url="https://apis.paralleldots.com/v3/similarity"
-text='["Global warming set to exceed Paris agreement’s 1.5C limit by 2040s, according to draft UN report","There is a tipping point’: UN warns climate change goals laid out in Paris accord are almost out of reach"]'
-result<-similarity(url,text,api_key)
+text_1="Global warming set to exceed Paris agreement’s 1.5C limit by 2040s, according to draft UN report"
+text_2="There is a tipping point’: UN warns climate change goals laid out in Paris accord are almost out of reach"
+result<-similarity(url,text_1,text_2,api_key)
 	
 
 url="https://apis.paralleldots.com/v3/ner"
