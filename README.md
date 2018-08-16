@@ -5,9 +5,6 @@ R wrapper for [ParallelDots' APIs](https://www.paralleldots.com/text-analysis-ap
 
 Installation
 ------------
-Install with Rstudio
-Version 3.2.3
-
 ```r
 devtools::install(<path_to_locally_cloned_repo>)
 ```
@@ -210,7 +207,7 @@ library("ParallelDots")
 
 url="https://apis.paralleldots.com/v3/language_detection"
 text="C'est un environnement très hostile, si vous choisissez de débattre ici, vous serez vicieusement attaqué par l'opposition"
-result<-multilang_keywords(url,text,api_key)
+result<-language_detection(url,text,api_key)
 
 ```
  Available APIs: sentiment | sentiment_batch | abuse | abuse_batch | custom_classifier | emotion | emotion_batch | intent |intent_batch | keywords | keywords_batch | multilang_keywords | ner | ner_batch | nsfw | phrase_extractor | phrase_extractor_batch | popularity | similarity | taxonomy | taxonomy_batch | text_parser | text_parser_batch | facial_emotion | object_recognizer |  language_detection | language_detection_batch |
