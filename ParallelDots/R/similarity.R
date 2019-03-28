@@ -13,3 +13,4 @@ similarity <- function(url,data_1,data_2,key) {
   result<-content(req)
   return(toJSON(result, auto_unbox = TRUE))
 }
+

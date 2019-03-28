@@ -210,6 +210,6 @@ text="C'est un environnement très hostile, si vous choisissez de débattre ici,
 result<-language_detection(url,text,api_key)
 
 ```
- Available APIs: sentiment | sentiment_batch | abuse | abuse_batch | custom_classifier | emotion | emotion_batch | intent |intent_batch | keywords | keywords_batch | multilang_keywords | ner | ner_batch | nsfw | phrase_extractor | phrase_extractor_batch | popularity | similarity | taxonomy | taxonomy_batch | text_parser | text_parser_batch | facial_emotion | object_recognizer |  language_detection | language_detection_batch |
+ Available APIs: sentiment | sentiment_batch | abuse | abuse_batch | custom_classifier | emotion | emotion_batch | sarcasm | sarcasm_batch | intent |intent_batch | keywords | keywords_batch | multilang_keywords | ner | ner_batch | nsfw | phrase_extractor | phrase_extractor_batch | popularity | similarity | taxonomy | taxonomy_batch | text_parser | text_parser_batch | facial_emotion | object_recognizer |  language_detection | language_detection_batch |
 
 Note : You must pass your API key as the last parameter for single usage.

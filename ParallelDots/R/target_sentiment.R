@@ -1,10 +1,12 @@
 library("httr")
 library("jsonlite")
-ner <- function(url,data,key) {
+target_sentiment <- function(url,data,key,language_code,entity) {
   req <- POST(url,
               body = list(
                 text = data,
-                api_key=key
+                api_key=key,
+                lang_code=language_code,
+                entity=entity
               ),
               encode = "multipart"
               )
@@ -12,5 +14,3 @@ ner <- function(url,data,key) {
   result<-content(req)
   return(toJSON(result, auto_unbox = TRUE))
 }
-
-

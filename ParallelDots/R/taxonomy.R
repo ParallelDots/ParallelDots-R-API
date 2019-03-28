@@ -12,3 +12,4 @@ taxonomy <- function(url,data,key) {
   result<-content(req)
   return(toJSON(result, auto_unbox = TRUE))
 }
+
