@@ -185,7 +185,7 @@ library("ParallelDots")
 
 url="https://apis.paralleldots.com/v4/sentiment"
 text="C'est un environnement très hostile, si vous choisissez de débattre ici, vous serez vicieusement attaqué par l'opposition"
-result<-sentiment(url,text,api_key,"fr")
+result<-sentiment(url,text,"fr",api_key)
 
 ```
  Available APIs: sentiment | sentiment_batch | abuse | abuse_batch | custom_classifier | emotion | emotion_batch | sarcasm | sarcasm_batch | intent |intent_batch | keywords | keywords_batch | multilang_keywords | ner | ner_batch | phrase_extractor | phrase_extractor_batch | similarity | taxonomy | taxonomy_batch | facial_emotion | object_recognizer |
