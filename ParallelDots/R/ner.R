@@ -1,10 +1,11 @@
 library("httr")
 library("jsonlite")
-ner <- function(url,data,key) {
+ner <- function(url,data,lang_code,key) {
   req <- POST(url,
               body = list(
                 text = data,
-                api_key=key
+                api_key=key,
+                lang_code = lang_code
               ),
               encode = "multipart"
               )

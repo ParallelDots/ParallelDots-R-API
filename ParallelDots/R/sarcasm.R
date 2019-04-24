@@ -1,10 +1,11 @@
 library("httr")
 library("jsonlite")
-sarcasm <- function(url,text,key) {
+sarcasm <- function(url,data,lang_code,key) {
   req <- POST(url,
               body = list(
-                text = text,
-                api_key=key
+                text = data,
+                api_key=key,
+		lang_code=lang_code
               ),
               encode = "multipart"
               )
@@ -12,3 +13,4 @@ sarcasm <- function(url,text,key) {
   result<-content(req)
   return(toJSON(result, auto_unbox = TRUE))
 }
+
